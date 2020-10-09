@@ -1,2 +1,6 @@
 /.idea/
 /cmake-build-debug/
+part a/.idea
+part a/cmake-build-debug
+part b/.idea
+part b/cmake-build-debug
