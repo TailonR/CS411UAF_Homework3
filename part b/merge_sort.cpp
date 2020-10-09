@@ -40,7 +40,7 @@ template <typename FDIter>
 void stableMerge(FDIter first, FDIter middle, FDIter last)
 {
     // ** C++03:
-    using Value = typename iterator_traits<FDIter>::value_type;
+    using Value = typename std::iterator_traits<FDIter>::value_type;
     // ** C++11:
 //    using Value = typename remove_reference<decltype(*first)>::type;
     // ** Is this really better?
