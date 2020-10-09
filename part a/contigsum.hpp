@@ -7,11 +7,8 @@
 #include <vector>
 #include <deque>
 
-int contigSum(const std::vector<int>::const_iterator& begin, const std::vector<int>::const_iterator& end) {
-    return 0;
-};
-
-int contigSum(std::reverse_iterator<std::deque<int>::const_iterator> begin, std::reverse_iterator<std::deque<int>::const_iterator> end) {
+template<typename RAIter>
+int contigSum(RAIter first, RAIter last) {
     return 0;
 };
 
