@@ -37,14 +37,14 @@ if the size is 1 then the biggest sum is either the element in that sequence or 
 The case where the range is bigger than 1 is handled by this 
 ```c++
 Result left = contigSumWorker(first, std::next(first, range/2));
-            Result right = contigSumWorker(std::next(first, range/2), last);
+Result right = contigSumWorker(std::next(first, range/2), last);
 
-            return Result{std::max(right.gcs,
-                                   std::max(right.gcs,
-                                            (left.biggestSumWithLast+right.biggestSumWithFirst))),
-                          std::max(left.biggestSumWithFirst, (left.sumOfSequence+right.biggestSumWithFirst)),
-                          std::max(right.biggestSumWithLast, (left.biggestSumWithLast+right.sumOfSequence)),
-                          left.sumOfSequence+right.sumOfSequence};
+return Result{std::max(right.gcs,
+                       std::max(right.gcs,
+                                (left.biggestSumWithLast+right.biggestSumWithFirst))),
+              std::max(left.biggestSumWithFirst, (left.sumOfSequence+right.biggestSumWithFirst)),
+              std::max(right.biggestSumWithLast, (left.biggestSumWithLast+right.sumOfSequence)),
+              left.sumOfSequence+right.sumOfSequence};
 ```
 
 ## Part B
