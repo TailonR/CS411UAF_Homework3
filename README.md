@@ -52,7 +52,7 @@ The key idea for finding the number of inversions is that it's the number elemen
 how I thought at first, the number of times an element was swapped. In other words, the number of inversions 
 is the distances that elements have to travel to make the sequence sorted.
 
-The specification required that Merge Sort must be used, although modified to fulfill the objective.
+The specification required Merge Sort to be used, although modified to fulfill the objective.
 This is done in one line.
 
 ```c++
