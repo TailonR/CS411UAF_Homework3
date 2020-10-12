@@ -1,6 +1,15 @@
+// inversions.hpp
+// Tailon Russell
+// Date: 10/8/2020
+// For counting the number of inversions in a given sequence.
 //
-// Created by renew on 10/8/2020.
-//
+// merge sort originally from:
+// merge_sort.cpp
+// Glenn G. Chappell
+// 9 Oct 2015
+// For CS 411/611 Fall 2015
+// Merge Sort using Iterators
+
 
 #ifndef HOMEWORK3_INVERSIONS_HPP
 #define HOMEWORK3_INVERSIONS_HPP
@@ -102,6 +111,14 @@ void mergeSort(FDIter first, FDIter last, int &numInversions)
     stableMerge(first, middle, last, numInversions);
 }
 
+// inversions
+//returns the number of inversions in a given sequence
+// Requirements on types:
+//      RAIter is a random access iterator type
+// Pre:
+//  [first, last) must be a valid range
+// Post:
+//      numInversions is the number of inversions in the range [first, last)
 template<typename RAIter>
 size_t inversions(RAIter first, RAIter last) {
     int numOfInversions = 0;
