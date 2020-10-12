@@ -10,9 +10,9 @@ The test files are contigsum_test.cpp and inversions_test.cpp
 # The Problem
 As stated in HW3_instructions, there are two goals
 * Find the greatest contiguous sum faster than O(nlogn) time 
-** Define the template funciton contigSum(RAIter first, RAIter last)
+- Define the template funciton contigSum(RAIter first, RAIter last)
 * Find the number of inversions in a sequence faster than O(n^2) time
-** Define the template function inversions(RAIter first, RAIter last)
+- Define the template function inversions(RAIter first, RAIter last)
 
 These are accomplished by implementing divide-and-conquere algorithms
 
