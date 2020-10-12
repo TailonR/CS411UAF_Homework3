@@ -67,8 +67,8 @@ This is done in one line.
     }
 ```
 The line that counts the distance traveled is where numInversions is incremented. numInversions is 
-passed by reference to inversions, which then passes it by reference to the mergesort function, and in turn passes it by
-refernce to the stable merge function (which is where this code is in)
+passed by reference to the mergesort function, and then is passed by reference to the stable merge function 
+(which is where this code is in). Then inversions returns it.
 
 # License
 [MIT](https://choosealicense.com/licenses/mit/)
