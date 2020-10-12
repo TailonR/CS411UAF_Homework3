@@ -48,7 +48,7 @@ return Result{std::max(right.gcs,
 ```
 
 ## Part B
-The key idea for finding the number of inversions it's the number elements jumped over when swapping, and not, 
+The key idea for finding the number of inversions is that it's the number elements jumped over when swapping, and not, 
 how I thought at first, the number of times an element was swapped. In other words, the number of inversions 
 is the distances that elements have to travel to make the sequence sorted.
 
