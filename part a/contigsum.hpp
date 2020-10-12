@@ -13,6 +13,15 @@ struct Result {
     int gcs, biggestSumWithFirst, biggestSumWithLast, sumOfSequence;
 };
 
+// contigSumWorker
+// returns the greatest contiguous sum,
+//      the biggest sum that includes the first element,
+//      the biggest sum that includes the last element,
+//      and the sum of the entire sequence
+// Requirements on types:
+//      RAIter is a random access iterator type
+// Pre:
+//      [first, last) must be a valid range
 template<typename RAIter>
 Result contigSumWorker(RAIter first, RAIter last) {
     Result ListABCD;
@@ -34,6 +43,12 @@ Result contigSumWorker(RAIter first, RAIter last) {
     }
 };
 
+// contigSum
+// returns the greatest contiguous sum of the sequence
+// Requirements on types:
+//      RAIter is a random access iterator type
+// Pre:
+//  [first, last) must be a valid iterator type
 template<typename RAIter>
 int contigSum(RAIter first, RAIter last) {
     return contigSumWorker(first, last).gcs;
