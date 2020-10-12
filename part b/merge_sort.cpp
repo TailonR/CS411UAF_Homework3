@@ -4,7 +4,6 @@
 //
 // For CS 411/611 Fall 2015
 // Merge Sort using Iterators
-/*
 
 #include <iostream>
 using std::cout;
@@ -140,4 +139,3 @@ int main()
     return 0;
 }
 
-*/
